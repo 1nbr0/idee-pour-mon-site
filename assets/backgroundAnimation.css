@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #111;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    user-select: none;
+}
+
+section .line {
+    position: relative;
+    top: -50%;
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+    white-space: nowrap;
+    font-size: 64px;
+    transform: rotate(-30deg);
+    mask-repeat: repeat;
+}
+
+i {
+    color: rgba(0, 0, 0, 1);
+    transition: 1s;
+    padding: 0 5px;
+    cursor: default;
+}
+
+.fa-android:hover {
+    transition: 0s;
+    color: #2edf85;
+    text-shadow: 0 0 120px #2edf85;
+}
+
+.fa-css3-alt:hover {
+    transition: 0s;
+    color: #0070bb;
+    text-shadow: 0 0 120px #0070bb;
+}
+
+.fa-discord:hover {
+    transition: 0s;
+    color: #5b72c3;
+    text-shadow: 0 0 120px #5b72c3;
+}
+
+.fa-fighter-jet:hover {
+    transition: 0s;
+    color: #686868;
+    text-shadow: 0 0 120px #686868;
+}
+
+.fa-figma:hover {
+    transition: 0s;
+    color: #ff7261;
+    text-shadow: 0 0 120px #ff7261;
+}
+
+.fa-fist-raised:hover {
+    transition: 0s;
+    color: #fff;
+    text-shadow: 0 0 120px #fff;
+}
+
+.fa-github:hover {
+    transition: 0s;
+    color: #fff;
+    text-shadow: 0 0 120px #fff;
+}
+
+.fa-html5:hover {
+    transition: 0s;
+    color: #e54c21;
+    text-shadow: 0 0 120px #e54c21;
+}
+
+.fa-laravel:hover {
+    transition: 0s;
+    color: #ef3b2d;
+    text-shadow: 0 0 120px #ef3b2d;
+}
+
+.fa-php:hover {
+    transition: 0s;
+    color: #8993c1;
+    text-shadow: 0 0 120px #8993c1;
+}
+
+.fa-react:hover {
+    transition: 0s;
+    color: #61dbfb;
+    text-shadow: 0 0 120px #61dbfb;
+}
+
+.fa-space-shuttle:hover {
+    transition: 0s;
+    color: #fff;
+    text-shadow: 0 0 120px #fff;
+}
+
+.fa-spotify:hover {
+    transition: 0s;
+    color: #1ed760;
+    text-shadow: 0 0 120px #1ed760;
+}
+
+.fa-symfony:hover {
+    transition: 0s;
+    color: #fff;
+    text-shadow: 0 0 120px #fff;
+}
+
+.fa-xbox:hover {
+    transition: 0s;
+    color: #077d07;
+    text-shadow: 0 0 120px #077d07;
+}
+
+.fa-youtube:hover {
+    transition: 0s;
+    color: #f70000;
+    text-shadow: 0 0 120px #f70000;
+}
+
+.fa-snapchat-ghost:hover {
+    transition: 0s;
+    color: #fffc00;
+    text-shadow: 0 0 120px #fffc00;
+}
+
+.fa-java:hover {
+    transition: 0s;
+    color: #e6312c;
+    text-shadow: 0 0 120px #e6312c;
+}
+
+.fa-js-square:hover {
+    transition: 0s;
+    color: #f7df1e;
+    text-shadow: 0 0 120px #f7df1e;
+}
+
+.fa-instagram:hover {
+    transition: 0s;
+    color: #c12492;
+    text-shadow: 0 0 120px #c12492;
+}
+
+.fa-facebook-messenger:hover {
+    transition: 0s;
+    color: #017eff;
+    text-shadow: 0 0 120px #017eff;
+}
+
+.fa-basketball-ball:hover {
+    transition: 0s;
+    color: #e96b04;
+    text-shadow: 0 0 120px #e96b04;
+}
+
+.fa-dumbbell:hover {
+    transition: 0s;
+    color: #fff;
+    text-shadow: 0 0 120px #fff;
+}
+
+.fa-twitch:hover {
+    transition: 0s;
+    color: #8c45f7;
+    text-shadow: 0 0 120px #8c45f7;
+}
+
+
+section .line div {
+    animation: animate1 80s linear infinite;
+    animation-delay: -80s;
+}
+
+section .line div:nth-child(2) {
+    animation: animate2 80s linear infinite;
+    animation-delay: -40s;
+}
+
+@keyframes animate1 {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+section .line:nth-child(even) div {
+    animation: animate3 80s linear infinite;
+    animation-delay: -80s;
+}
+
+section .line:nth-child(even) div:nth-child(2) {
+    animation: animate4 80s linear infinite;
+    animation-delay: -40s;
+}
+
+@keyframes animate3 {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes animate4 {
+    0% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
